@@ -25,4 +25,7 @@ public class LineItem {
     public double getAmount() {
         return product.getPrice() * quantity;
     }
+    public String getFormattedAmount() {
+        return String.format("%.2f", getAmount());
+    }
 }

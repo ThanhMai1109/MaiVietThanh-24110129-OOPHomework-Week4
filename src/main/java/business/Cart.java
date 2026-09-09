@@ -55,4 +55,7 @@ public class Cart {
         }
         return total;
     }
+    public String getFormattedTotal() {
+        return String.format("%.2f", getTotal());
+    }
 }
