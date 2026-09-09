@@ -23,4 +23,8 @@ public class Product {
     public double getPrice() {
         return price;
     }
+
+    public String getFormattedPrice() {
+        return String.format("%.2f", price);
+    }
 }
